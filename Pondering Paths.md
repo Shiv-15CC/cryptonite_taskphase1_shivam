@@ -85,8 +85,23 @@ In this challenge, we first need to use a relative path for the file, it must st
 
 
 
+## Implicit Relative Path
 
+for this challenge we need to run the `run` command from the `/challenge` directory, use `./run` to explicitly specify that we are executing the program in the current directory. 
 
+    Connected!                                                                        
+    hacker@paths~implicit-relative-path:~$ /challenge
+    ssh-entrypoint: /challenge: Is a directory
+    hacker@paths~implicit-relative-path:~$ cd /challenge
+    hacker@paths~implicit-relative-path:/challenge$ run
+    ssh-entrypoint: run: command not found
+    hacker@paths~implicit-relative-path:/challenge$ ./run
+    Correct!!!
+    ./run is a relative path, invoked from the right directory!
+    Here is your flag:
+    pwn.college{QrZczm8b3ixpeRrrl8VVJjOrV5-.dFTN1QDL4ETO0czW}
+
+## Home Sweet Home
 
 
 
