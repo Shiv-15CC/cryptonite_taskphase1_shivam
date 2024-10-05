@@ -80,10 +80,16 @@ In this challenge, we first need to use a relative path for the file, it must st
 
 ##   Explicit Relative Paths, from /
 
+This program is same as last one in this we need to just use the explicit relative path like ./challenge/run
+Then to start it we need to change the directory from /cd to / after which we run the ./challenge/run command as told in the problem 
 
-
-
-
+    Connected!                                                                        
+    hacker@paths~explicit-relative-paths-from-:~$ cd /
+    hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
+    Correct!!!
+    ./challenge/run is a relative path, invoked from the right directory!
+    Here is your flag:
+    pwn.college{A7gruZbySL3F5gpiy4nvBXqbRYx.dBTN1QDL4ETO0czW}
 
 ## Implicit Relative Path
 
@@ -105,6 +111,11 @@ for this challenge we need to run the `run` command from the `/challenge` direct
 
 
 
+    Connected!                                                                        
+    hacker@paths~home-sweet-home:~$ /challenge/run ~/~
+    Writing the file to /home/hacker/~!
+    ... and reading it back to you:
+    pwn.college{Md8aNa7VMUWcfMaYve72DJL2W-L.dNzM4QDL4ETO0czW}
 
 
 
