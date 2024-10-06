@@ -166,5 +166,13 @@ after which we need to cat command
 
 ## linking files 
 
+In this program we start off with ln -s /flag /home/hacker/not-the/flag, after this i executed the /challenge/catflag to get the key
+
+    Connected!                                                                        
+    hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+    hacker@commands~linking-files:~$ /challenge/catflag
+    About to read out the /home/hacker/not-the-flag file!
+    pwn.college{Qdg5ZsVYDKzvPZ4dtknbcipdwdH.dlTM1UDL4ETO0czW}
+
 
 
