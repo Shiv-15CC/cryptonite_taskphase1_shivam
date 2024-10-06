@@ -38,7 +38,7 @@ In this catting practice we can't use the cd command so for this i used the cd c
 
 ## grepping for needle in a hacksystem 
 
-This is a new command grep which allws us to search for the content 
+This is a new command grep which allows us to search for the content 
 
     Connected!                                                                        
     hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
