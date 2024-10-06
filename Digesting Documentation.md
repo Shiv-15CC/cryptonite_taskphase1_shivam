@@ -34,3 +34,46 @@ then to get the flag i just used the command /challenge/challenge --printfile /f
     hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
     Correct argument! Here is the /flag file:
     pwn.college{8hvE0OPErS00raSzAVGNmTgkxys.dVjM5QDL4ETO0czW}
+
+## Reading Manuals
+
+From this Reading Manuals we get to learn a new command which is the 'man' this is used to display the manual for any command that is given to us as an argument 
+We start by using 'man challenge' 
+in the manual the command '/challenge/challenge --wqusbhh 744' is given to get the flag 
+
+    Connected!                                                                        
+    man hacker@man~reading-manuals:~$ man  challenge
+
+    CHALLENGE(1)                                                                     Challenge Commands                                                                                CHALLENGE(1)
+
+    NAME
+       /challenge/challenge - print the flag!
+
+    SYNOPSIS
+       challenge <u style="text-decoration-style:solid">OPTION</u>
+
+    DESCRIPTION
+       Output the flag when called with the right arguments.
+
+       --fortune
+              read a fortune
+
+       --version
+              output version information and exit
+
+       --wqsbhh NUM
+              print the flag if NUM is 744
+
+    AUTHOR
+       Written by Zardus.
+
+    REPORTING BUGS
+       The repository for this dojo: &lt;https://github.com/pwncollege/linux-luminarium/&gt;
+
+    SEE ALSO
+       man(1) bash-builtins(7)
+
+    pwn.college                                                                           May 2024                                                                                     CHALLENGE(1)
+    hacker@man~reading-manuals:~$ /challenge/challenge --wqsbhh 744
+    Correct usage! Your flag: pwn.college{wqSAsLbRhhKaHowR_AkjIpdLv7f.dRTM4QDL4ETO0czW}
+ 
