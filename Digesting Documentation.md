@@ -77,3 +77,39 @@ in the manual the command '/challenge/challenge --wqusbhh 744' is given to get t
     hacker@man~reading-manuals:~$ /challenge/challenge --wqsbhh 744
     Correct usage! Your flag: pwn.college{wqSAsLbRhhKaHowR_AkjIpdLv7f.dRTM4QDL4ETO0czW}
  
+## Searching Manuals
+
+This is same as the previous program just the difference is that in this there is a hidden argument 
+We start with 'man challenge'
+After that ____________________
+
+
+## Searching for Manuals
+
+
+## Helpful Programs 
+
+Many command don't have the 'man' command so in that case we use the help command which is the --help 
+For this we start with '/challenge/challenge --help
+after that we use the '/challenge/challenge -p' which give the value of '-g'
+after getting the value of g which in my case is 309 
+I ran the '/challenge/challenge -g 309' command to get the flag 
+
+    Connected!                                                                        
+    hacker@man~helpful-programs:~$ /challenge/challenge --help
+    usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
+
+    optional arguments:
+   -h, --help            show this help message and exit
+   --fortune             read your fortune
+   -v, --version         get the version number
+   -g GIVE_THE_FLAG, --give-the-flag GIVE_THE_FLAG
+                        get the flag, if given the correct value
+   -p, --print-value     print the value that will cause the -g option to give you the flag
+    hacker@man~helpful-programs:~$ /challenge/challenge -p
+    The secret value is: 309
+    hacker@man~helpful-programs:~$ /challenge/challenge -g 309
+    Correct usage! Your flag: pwn.college{cjg-3Z0P99ixRmOh1vLV-HYqdmt.ddjM4QDL4ETO0czW}
+
+## Help For Builtins 
+
