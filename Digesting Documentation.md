@@ -83,8 +83,61 @@ This is same as the previous program just the difference is that in this there i
 We start with 'man challenge'
 After that ____________________
 
+shivam-mit@shivam-mit-Inspiron-7373:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!                                                                        
+hacker@man~searching-manuals:~$ man chllenge
+No manual entry for chllenge
+hacker@man~searching-manuals:~$ man challenge
+hacker@man~searching-manuals:~$ /challenge/challenge --cieo
+Initializing...
+Correct usage! Your flag: pwn.college{s2wQrdZN1GjiM7aqKTpEULidIRd.dVTM4QDL4ETO0czW}
 
 ## Searching for Manuals
+
+This problem is slightly tricky to get to the flag, but yes eventually u will land there soon 
+To start off with first we run is man man I directed
+After finding for a long time i came across the man -K 
+after whcih i ran the man -K/challenge/challenge to search for manauals that reference the string. 
+Finally after finding the document I found the --avhzee argument 
+After whcih i ran the /challenge/challenge --avhzee 052 to get the flag 
+
+    shivam-mit@shivam-mit-Inspiron-7373:~$ ssh -i ./key hacker@dojo.pwn.college
+    Connected!                                                                        
+    hacker@man~searching-for-manuals:~$ man -K "challenge/challenge"
+
+    CHALLENGE(1)                                                                     Challenge Commands                                                                               CHALLENGE(1)
+
+    NAME
+       /challenge/challenge - print the flag!
+
+    SYNOPSIS
+       challenge OPTION
+
+    DESCRIPTION
+       Output the flag when called with the right arguments.
+
+       --fortune
+              read a fortune
+
+       --version
+              output version information and exit
+
+       --avhzee NUM
+              print the flag if NUM is 052
+
+    AUTHOR
+       Written by Zardus.
+
+    REPORTING BUGS
+       The repository for this dojo: <https://github.com/pwncollege/linux-luminarium/>
+
+    SEE ALSO
+       man(1) bash-builtins(7)
+
+     pwn.college                                                                           May 2024                                                                                        CHALLENGE(1)
+    chacker@man~searching-for-manuals:~$ ^C
+    hacker@man~searching-for-manuals:~$ /challenge/challenge  --avhzee 052
+    Correct usage! Your flag: pwn.college{0XavZHXGhX5zePFKe2d1XjNGPRU.dZTM4QDL4ETO0czW}
 
 
 ## Helpful Programs 
