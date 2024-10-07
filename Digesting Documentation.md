@@ -81,16 +81,17 @@ in the manual the command '/challenge/challenge --wqusbhh 744' is given to get t
 
 This is same as the previous program just the difference is that in this there is a hidden argument 
 We start with 'man challenge'
-After that ____________________
+after a lot of understanding I found the cieo argument 
+I executed the /challenge/challenge --cieo to get the flag
 
-shivam-mit@shivam-mit-Inspiron-7373:~$ ssh -i ./key hacker@dojo.pwn.college
-Connected!                                                                        
-hacker@man~searching-manuals:~$ man chllenge
-No manual entry for chllenge
-hacker@man~searching-manuals:~$ man challenge
-hacker@man~searching-manuals:~$ /challenge/challenge --cieo
-Initializing...
-Correct usage! Your flag: pwn.college{s2wQrdZN1GjiM7aqKTpEULidIRd.dVTM4QDL4ETO0czW}
+    shivam-mit@shivam-mit-Inspiron-7373:~$ ssh -i ./key hacker@dojo.pwn.college
+    Connected!                                                                        
+    hacker@man~searching-manuals:~$ man chllenge
+    No manual entry for chllenge
+    hacker@man~searching-manuals:~$ man challenge
+    hacker@man~searching-manuals:~$ /challenge/challenge --cieo
+    Initializing...
+    Correct usage! Your flag: pwn.college{s2wQrdZN1GjiM7aqKTpEULidIRd.dVTM4QDL4ETO0czW}
 
 ## Searching for Manuals
 
