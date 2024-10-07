@@ -167,3 +167,72 @@ I ran the '/challenge/challenge -g 309' command to get the flag
 
 ## Help For Builtins 
 
+In this problem we learnt the builtins, which are built into the shell itself 
+To start off with we run the help command after which i found challenge 
+I ran the help challenge command to get more details about the challenge 
+Then finally I got the secret and then ran hallenge --secret"U_tTUZek"
+
+
+    Connected!                                                                        
+    hacker@man~help-for-builtins:~$ help
+    GNU bash, version 5.2.32(1)-release (x86_64-pc-linux-gnu)
+    These shell commands are defined internally.  Type `help' to see this list.
+    Type `help name' to find out more about the function `name'.
+    Use `info bash' to find out more about the shell in general.
+    Use `man -k' or `info' to find out more about commands not in this list.
+
+    A star (*) next to a name means that the command is disabled.
+
+    job_spec [&]                                                                                history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg           [arg...]
+    (( expression ))                                                                            if COMMANDS; then COMMANDS; [ elif COMMANDS; then COMMANDS; ]... [ else COMMANDS;     ] fi
+    . filename [arguments]                                                                      jobs [-lnprs] [jobspec ...] or jobs -x command [args]
+    :                                                                                           kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+    [ arg... ]                                                                                  let arg [arg ...]
+    [[ expression ]]                                                                            local [option] name[=value] ...
+    alias [-p] [name[=value] ... ]                                                              logout [n]
+     bg [job_spec ...]                                                                           mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback]      [-c quan>
+     bind [-lpsvPSVX] [-m keymap] [-f filename] [-q name] [-u name] [-r keyseq] [-x keyseq:she>  popd [-n] [+N | -N]
+     break [n]                                                                                   printf [-v var] format [arguments]
+     builtin [shell-builtin [arg ...]]                                                           pushd [-n] [+N | -N | dir]
+     caller [expr]                                                                               pwd [-LP]
+     case WORD in [PATTERN [| PATTERN]...) COMMANDS ;;]... esac                                  read [-ers] [-a array] [-d delim] [-i text] [-n nchars] [-N nchars] [-p prompt]      [-t time>
+    cd [-L|[-P [-e]] [-@]] [dir]                                                                readarray [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback]     [-    c qu>
+     challenge [--fortune] [--version] [--secret SECRET]                                         readonly [-aAf] [name[=value] ...] or readonly -p
+     command [-pVv] command [arg ...]                                                            return [n]
+     compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist] [-F function] >  select NAME [in WORDS ... ;] do COMMANDS; done
+     complete [-abcdefgjksuv] [-pr] [-DEI] [-o option] [-A action] [-G globpat] [-W wordlist] >  set [-abefhkmnptuvxBCEHPT] [-o option-name] [--] [-] [arg ...]
+     compopt [-o|+o option] [-DEI] [name ...]                                                    shift [n]
+     continue [n]                                                                                shopt [-pqsu] [-o] [optname ...]
+     coproc [NAME] command [redirections]                                                        source filename [arguments]
+     declare [-aAfFgiIlnrtux] [name[=value] ...] or declare -p [-aAfFilnrtux] [name ...]         suspend [-f]
+     dirs [-clpv] [+N] [-N]                                                                      test [expr]
+     disown [-h] [-ar] [jobspec ... | pid ...]                                                   time [-p] pipeline
+     echo [-neE] [arg ...]                                                                       times
+     enable [-a] [-dnps] [-f filename] [name ...]                                                trap [-lp] [[arg] signal_spec ...]
+     eval [arg ...]                                                                              true
+     exec [-cl] [-a name] [command [argument ...]] [redirection ...]                             type [-afptP] name [name ...]
+     exit [n]                                                                                    typeset [-aAfFgiIlnrtux] name[=value] ... or typeset -p [-aAfFilnrtux] [name ...]
+     export [-fn] [name[=value] ...] or export -p                                                ulimit [-SHabcdefiklmnpqrstuvxPRT] [limit]
+     false                                                                                       umask [-p] [-S] [mode]
+     fc [-e ename] [-lnr] [first] [last] or fc -s [pat=rep] [command]                            unalias [-a] name [name ...]
+     fg [job_spec]                                                                               unset [-f] [-v] [-n] [name ...]
+     for NAME [in WORDS ... ] ; do COMMANDS; done                                                until COMMANDS; do COMMANDS-2; done
+     for (( exp1; exp2; exp3 )); do COMMANDS; done                                               variables - Names and meanings of some shell variables
+     function name { COMMANDS ; } or name () { COMMANDS ; }                                      wait [-fn] [-p var] [id ...]
+     getopts optstring name [arg ...]                                                            while COMMANDS; do COMMANDS-2; done
+     hash [-lr] [-p pathname] [-dt] [name ...]                                                   { COMMANDS ; }
+     help [-dms] [pattern ...]
+    hacker@man~help-for-builtins:~$ help challenge
+    challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+    
+    Options:
+      --fortune		display a fortune
+      --version		display the version
+      --secret VALUE	prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "U_tTUZek".
+    hacker@man~help-for-builtins:~$ challenge --secret U_tTUZek
+    Correct! Here is your flag!
+    pwn.college{U_tTUZekrwkmYX-nzBrkGG01HEg.dRTM5QDL4ETO0czW}
