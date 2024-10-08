@@ -1,0 +1,4 @@
+# PRACTICING PIPING
+
+## Redirecting Output
+
